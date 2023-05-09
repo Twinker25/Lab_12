@@ -8,9 +8,9 @@ namespace Lab_12
         static void Main(string[] args)
         {
             int choice, n1, n2, n3, number;
-            do
+            while (true)
             {
-                Console.Write("Enter task (1 - 5) or Calculator (6): ");
+                Console.Write("\nEnter task (1 - 5) or Calculator (6): ");
                 choice = int.Parse(Console.ReadLine());
                 switch (choice) 
                 {
@@ -129,7 +129,7 @@ namespace Lab_12
                         Console.WriteLine("Error!");
                         break;
                 }
-            } while (choice < 1 || choice > 5);
+            }
         }
     }
 }
